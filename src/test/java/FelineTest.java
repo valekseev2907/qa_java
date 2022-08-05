@@ -32,7 +32,7 @@ public class FelineTest {
         String expected = "Кошачьи";
         String actual = feline.getFamily();
 
-        Assert.assertEquals("v ", expected, actual);
+        Assert.assertEquals("values do not match", expected, actual);
     }
 
     @Test
@@ -40,7 +40,7 @@ public class FelineTest {
         int kittensCount = 0;
         Mockito.doReturn(kittensCount).when(feline).getKittens(Mockito.anyInt());
 
-        Assert.assertEquals(feline.getKittens(), kittensCount);
+        Assert.assertEquals("values do not match", kittensCount, feline.getKittens());
     }
 
     @Test

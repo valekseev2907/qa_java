@@ -12,7 +12,7 @@ import java.util.List;
 @RunWith(MockitoJUnitRunner.Silent.class)
 public class CatTest {
     @Mock
-    Feline feline = new Feline();
+    Feline feline;
 
     @Test
     public void getSoundShouldReturnCorrectString() throws Exception {

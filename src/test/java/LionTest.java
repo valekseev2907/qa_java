@@ -22,7 +22,7 @@ public class LionTest {
         this.hasMane = hasMane;
     }
 
-    @Parameterized.Parameters
+    @Parameterized.Parameters(name = "if sex of lion = {0} than return {1} ")
     public static Object[][] getData() {
         return new Object[][]{
                 {"Самец", true},
